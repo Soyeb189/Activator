@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom"
+    android:paddingBottom="20dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTopLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:src="@drawable/ic_bottom_dialog_top_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPaySelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_21sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTopLine"
+        app:srcCompat="@drawable/pay_selection" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaySelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="@string/how_do_you_want_to_pay"
+        android:textColor="@color/appBlack"
+        android:textSize="18sp"
+        app:fontFamily="@font/segoe_pro_semi_bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivPaySelection"
+        app:layout_constraintStart_toEndOf="@id/ivPaySelection"
+        app:layout_constraintTop_toTopOf="@id/ivPaySelection" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaySubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/select_your_payment_method_to_proceed_on"
+        android:textColor="@color/subTittleColor"
+        android:textSize="14sp"
+        app:fontFamily="@font/segoe_pro_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@id/ivPaySelection" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvOnlinePayment"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintStart_toStartOf="@+id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@id/tvPaySubTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivOnlinePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/online_payment" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOnlinePayTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:text="@string/online_payment"
+                android:textColor="@color/appBlack"
+                android:textSize="14sp"
+                app:fontFamily="@font/segoe_pro_semi_bold"
+                app:layout_constraintEnd_toEndOf="@id/ivOnlinePayment"
+                app:layout_constraintStart_toStartOf="@id/ivOnlinePayment"
+                app:layout_constraintTop_toBottomOf="@id/ivOnlinePayment" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOnlinePaySubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="2dp"
+                android:text="@string/send_a_payment_link"
+                android:textColor="@color/subTittleColor"
+                android:textSize="12sp"
+                app:fontFamily="@font/segoe_pro_regular"
+                app:layout_constraintEnd_toEndOf="@id/ivOnlinePayment"
+                app:layout_constraintStart_toStartOf="@id/ivOnlinePayment"
+                app:layout_constraintTop_toBottomOf="@id/tvOnlinePayTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvCashPayment"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintStart_toStartOf="@+id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@id/tvPaySubTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCashPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cash_payment" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCashPayTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:text="@string/cash_payment"
+                android:textColor="@color/appBlack"
+                android:textSize="14sp"
+                app:fontFamily="@font/segoe_pro_semi_bold"
+                app:layout_constraintEnd_toEndOf="@id/ivCashPayment"
+                app:layout_constraintStart_toStartOf="@id/ivCashPayment"
+                app:layout_constraintTop_toBottomOf="@id/ivCashPayment" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCashPaySubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="2dp"
+                android:text="@string/receive_cash"
+                android:textColor="@color/subTittleColor"
+                android:textSize="12sp"
+                app:fontFamily="@font/segoe_pro_regular"
+                app:layout_constraintEnd_toEndOf="@id/ivCashPayment"
+                app:layout_constraintStart_toStartOf="@id/ivCashPayment"
+                app:layout_constraintTop_toBottomOf="@id/tvCashPayTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@+id/cvCashPayment"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:srcCompat="@drawable/dot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

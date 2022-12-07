@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activation_history.view.HistoryContainerFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActivationHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/activation_history"
+        style="@style/BaseTextStyleBold"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="#1D1D1E"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:padding="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_dark_with_shape"
+        app:layout_constraintTop_toTopOf="@id/tvActivationHistoryTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvActivationHistoryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginEnd="@dimen/_16sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActivationHistorySubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvActivationHistoryTitle"
+        android:text="@string/see_all_exciting_discounts_in_one_place"
+        style="@style/HomeItemSubTittleStyle"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="#1D1D1E"
+        android:layout_marginStart="@dimen/_18sdp"/>
+
+    <!--app:tabGravity="start"-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        app:tabIconTint="@color/mtrl_tabs_icon_color_selector"
+        app:tabIndicatorColor="@color/default_black"
+        app:tabTextAppearance="@style/HistoryTabTextAppearances"
+        app:tabSelectedTextColor="@color/default_black"
+        app:tabTextColor="@color/default_black"
+        app:tabRippleColor="@color/mtrl_tabs_ripple_color"
+        app:tabUnboundedRipple="true"
+        app:tabIndicator="@drawable/shape_left_top_right_top_arch"
+        app:tabIndicatorFullWidth="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivationHistorySubtitle"/>
+
+    <include
+        android:id="@+id/inc_divider"
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inc_divider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

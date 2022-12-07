@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name" translatable="false">Zaynax Health Activator</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="btn_continue">Continue</string>
+    <string name="lost_access_to_your_number">Lost access to your number?</string>
+    <string name="enter_the_6_digit_code">Enter the 6-digit code</string>
+    <string name="no_verification_code_received">No verification code received?</string>
+    <string name="we_ve_sent_it_to_your_mobile">We\'ve sent it to your number</string>
+    <string name="by_creating_a_pin_you_agree">By creating a PIN, you agree to our Terms and Condition and Privacy Policy</string>
+    <string name="create_a_pin">Create a PIN</string>
+    <string name="for_your_zcash_account">for your Zaynax Payment account</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="password">Password</string>
+    <string name="symbol_back" translatable="false">&lt;</string>
+    <string name="done">Done</string>
+    <string name="next_cap">NEXT</string>
+    <string name="done_cap">DONE</string>
+    <string name="sms">SMS</string>
+    <string name="english_en" translatable="false">English</string>
+    <string name="bangla_bn" translatable="false">বাংলা</string>
+    <string name="en" translatable="false">en</string>
+    <string name="bn" translatable="false">bn</string>
+
+
+    <string name="navigation_menu_like_us_item">Like us? Give us 5 stars</string>
+    <string name="navigation_menu_share_app">Share App</string>
+    <string name="navigation_menu_sign_out_item">Sign out</string>
+    <string name="navigation_menu_about_zaynax_item">About Zaynax Health</string>
+    <string name="navigation_menu_terms_condition_item">Terms and Condition</string>
+    <string name="navigation_menu_check_app_update">Check Update</string>
+
+    <string name="profile">Profile</string>
+
+
+    <string name="search_appointment">Search a appointment</string>
+    <string name="doctor_name">Azmol H. Sharker</string>
+    <string name="doctor_profile_completed">10% completed</string>
+    <string name="notifications">Notifications</string>
+
+
+    <string name="navigation_menu_doctor_account">Doctor Account</string>
+    <string name="navigation_menu_view_public_profile">View Public Profile</string>
+    <string name="navigation_menu_doctor_analytics">Analytics</string>
+    <string name="navigation_menu_customer_service">Customer Service</string>
+
+    <string name="navigation_menu_doctor_account_sub_tittle_item">Manage your account and profile</string>
+    <string name="navigation_menu_view_public_profile_sub_tittle_item">See how patients see your profile</string>
+    <string name="navigation_menu_doctor_analytics_sub_tittle_item">Get insights from one place</string>
+    <string name="navigation_menu_customer_service_sub_tittle">Contact our customer service</string>
+    <string name="navigation_menu_customer_service_item">Customer Service</string>
+
+
+    <string name="navigation_drawer_close">Close</string>
+    <string name="navigation_drawer_open">Open</string>
+
+    <string name="share_text">Install Zaynax Payment</string>
+    <string name="tap_for_balance">Tap for Balance</string>
+
+
+    <string name="please_select_operator">Please select operator</string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="dialog_go_back">Go Back</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="you_can_not_undo_this_action">You cannot undo this action</string>
+
+
+    <string name="qr_button" translatable="false">QR-Code Scanner</string>
+    <string name="custom_button" translatable="false">Custom Scanner</string>
+    <string name="ok_action" translatable="false">OK</string>
+    <string name="open_action" translatable="false">Open</string>
+    <string name="scan_barcode" translatable="false">Scan barcode</string>
+    <string name="barcode_format" translatable="false">BarcodeFormat</string>
+    <string name="go_back">Go Back</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="forgot_your_username">Forgot your username?</string>
+    <string name="pin">PIN</string>
+    <string name="username">Username</string>
+    <string name="notification">Notification</string>
+
+    <!--    ////////////////////////////////////////////  -->
+
+    <string-array name="array_telco_operator">
+        <item>Please select operator</item>
+        <item>Grameenphone</item>
+        <item>Robi</item>
+        <item>Airtel</item>
+        <item>Banglalink</item>
+        <item>Teletalk</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="statements">Statements</string>
+    <string name="home_distributor">Home Distributor</string>
+    <string name="home_dso">Home DSO</string>
+    <string name="home_agent">Home Agent</string>
+    <string name="menu_transaction_limit">Transaction Limits</string>
+    <string name="menu_account_statements">Account Statements</string>
+    <string name="menu_customer_service">Customer Service</string>
+    <string name="menu_like_our_services">Like our services?</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="distributor">Distributor</string>
+    <string name="dso">DSO</string>
+    <string name="agent">Agent</string>
+    <string name="activator_log_in">ACTIVATOR LOG IN</string>
+    <string name="email_or_phone_number">Phone Number</string>
+    <string name="new_user_activation">New User Activation</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send_code">Send Code</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="first_name">First Name<font color='#ea0663'>*</font></string>
+    <string name="last_name">Last Name<font color='#ea0663'>*</font></string>
+    <string name="activation_history">Activation History</string>
+
+
+    <string name="no_internet_sub_title">We couldn\'t connect to the internet. \nTry checking your connection.</string>
+    <string name="no_internet_title">No Network Connection</string>
+
+
+    <string name="pay_with">Pay with</string>
+    <string name="pick">Pick</string>
+
+    <string name="date_of_birth_tittle">Pick your date of birth</string>
+    <string name="go_home">Go Home</string>
+    <string name="identity_verification_document_type">Identity Verification Document Type<!--<font color='#ea0663'>*</font>--></string>
+    <string name="identity_verification_number">Identity Verification Number<!--<font color='#ea0663'>*</font>--></string>
+    <string name="nid_smart_card_passport_number">NID/Smart Card/Passport Number</string>
+    <string name="nominee_information">Nominee Information</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="nominee_mobile_number">Mobile Number</string>
+    <string name="enter_nominee_s_mobile_number">Enter nominee’s mobile number</string>
+    <string name="enter_nominee_s_name">Enter nominee’s name</string>
+    <string name="relationship">Relationship</string>
+    <string name="relationship_asterisk">Relationship</string>
+    <string name="relation">Relation</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="paid">Paid</string>
+    <string name="pay_online_now">Pay Online Now</string>
+    <string name="pay_with_100_secure_payment_options_and_confirm_your_appointment">Pay with 100% secure payment options and confirm your appointment</string>
+    <string name="help">Help</string>
+    <string name="no_data_found">No data found</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="date_of_birth">Date of Birth<font color='#ea0663'>*</font></string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="save_information">Save Information</string>
+    <string name="package_name">Package Name<font color='#ea0663'>*</font></string>
+    <string name="gender">Gender<font color='#ea0663'>*</font></string>
+    <string name="contact_number">Contact Number<font color='#ea0663'>*</font></string>
+    <string name="activated_by">Activated by<font color='#ea0663'>*</font></string>
+    <string name="how_do_you_want_to_pay">How do you want to pay?</string>
+    <string name="select_your_payment_method_to_proceed_on">Select your payment method to proceed on</string>
+    <string name="online_payment">Online Payment</string>
+    <string name="send_a_payment_link">Send a Payment Link</string>
+    <string name="cash_payment">Cash Payment</string>
+    <string name="receive_cash">Receive Cash</string>
+    <string name="nominee_name">Nominee Name</string>
+    <string name="nominee_name_asterisk">Nominee Name</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="spouse_name_here">Spouse name here</string>
+    <string name="child_name_here">Child name here</string>
+    <string name="child_name">Child Name</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="onlinePaymentAlertTitleMessage">Success!</string>
+    <string name="onlinePaymentAlertSubTitleMessage">Your requested payment link has been sent to user’s phone number.</string>
+    <string name="cashPaymentAlertTitleMessage">Are you sure?</string>
+    <string name="cashPaymentAlertSubtitleMessage">Please confirm if you really want to activate this package after receiving cash.</string>
+    <string name="applicant_information">Applicant Information</string>
+    <string name="see_all_exciting_discounts_in_one_place">See your activation history</string>
+    <string name="how_does_it_work">How does it work?</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="email">Email</string>
+    <string name="comment">Comment</string>
+    <string name="write_comment">Write comment</string>
+    <string name="submit_code">Submit Code</string>
+    <string name="log_in">Log In</string>
+    <string name="new_activation">New Activation</string>
+    <string name="package_price">Package Price</string>
+    <string name="commission">Commission</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="by_appointment_booking_you_are_agree">By booking the appointment, you agree to</string>
+    <string name="zaynax_healths">Zaynax Health\'s</string>
+    <string name="terms_and_condition"><u>Terms and Conditions.</u></string>
+    <string name="content_description">TODO</string>
+    <string name="payment">Payment</string>
+    <string name="submit">Submit</string>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/shape_left_right_arch_dialog_background"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_questionmark_confirm_appointment"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:src="@drawable/ic_checkbox_circle_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_title"
+            style="@style/BaseTextStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/appBlack"
+            android:textSize="@dimen/_15sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_questionmark_confirm_appointment" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/BaseTextStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Request Submitted"
+            android:textColor="#4C4C4C"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_positive"
+            style="@style/BaseTextStyleBold"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/shape_left_right_arch_bordered"
+            android:backgroundTint="@color/app_red"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@color/appPureWhite"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_negative"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+
+        <TextView
+            android:id="@+id/tv_negative"
+            style="@style/BaseTextStyleBold"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/shape_left_right_arch_bordered"
+            android:clickable="true"
+            android:elevation="@dimen/_1sdp"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:gravity="center"
+            android:text="@string/go_home"
+            android:textColor="@color/subTittleColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_positive"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+
+        <TextView
+            android:id="@+id/tv_go_back"
+            style="@style/BaseTextStyleBold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/shape_left_right_arch_bordered"
+            android:clickable="true"
+            android:elevation="@dimen/_1sdp"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:gravity="center"
+            android:text="@string/dialog_go_back"
+            android:textColor="@color/appBlack"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

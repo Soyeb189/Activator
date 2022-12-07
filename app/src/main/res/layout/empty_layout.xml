@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/emptyViewLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_empty_view"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found"
+        app:layout_constraintStart_toStartOf="@id/ivEmptyView"
+        app:layout_constraintEnd_toEndOf="@id/ivEmptyView"
+        app:layout_constraintTop_toBottomOf="@id/ivEmptyView"
+        style="@style/BaseTextStyleBold"
+        android:textSize="@dimen/_16sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

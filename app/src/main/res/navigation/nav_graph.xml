@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.zaynaxhealth.activator.ui.splash.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.zaynaxhealth.activator.ui.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <!--<fragment
+        android:id="@+id/nav_otp"
+        android:name="com.zaynaxhealth.activator.ui.fragments.OtpFragment"
+        android:label="OTP"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_nav_otp_to_inputFormFragment"
+            app:destination="@id/nav_input_form_fragment"
+            />
+    </fragment>-->
+   <!-- <fragment
+        android:id="@+id/nav_input_form_fragment"
+        android:name="com.zaynaxhealth.activator.ui.fragments.InputFormFragment"
+        android:label="fragment_input_form"
+        tools:layout="@layout/fragment_input_form" >
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_input_form_fragment_to_nav_otp"
+            app:destination="@id/nav_otp" />
+    </fragment>-->
+
+
+    <fragment
+        android:id="@+id/paymentGateWay"
+        android:name="com.zaynaxhealth.activator.ui.payment.PaymentGatewayFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_payment_gateway" />
+    <fragment
+        android:id="@+id/successOrFailFragment"
+        android:name="com.zaynaxhealth.activator.ui.success_fail.SuccessOrFailFragment"
+        android:label="SuccessOrFailFragment" />
+    <fragment
+        android:id="@+id/userNumberVerificationFragment"
+        android:name="com.zaynaxhealth.activator.ui.user_number_verification.view.UserNumberVerificationFragment"
+        tools:layout="@layout/fragment_user_number_verification" />
+    <fragment
+        android:id="@+id/userInfoSubmitFragment"
+        android:name="com.zaynaxhealth.activator.ui.user_info_submit.view.UserInfoSubmitFragment"
+        android:label="fragment_user_info_submit"
+        tools:layout="@layout/fragment_user_info_submit" />
+    <fragment
+        android:id="@+id/historyContainerFragment"
+        android:name="com.zaynaxhealth.activator.ui.activation_history.view.HistoryContainerFragment"
+        android:label="fragment_history_container"
+        tools:layout="@layout/fragment_history_container" />
+
+
+</navigation>

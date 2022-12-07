@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAlertTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/appBlack"
+        android:textSize="18sp"
+        app:fontFamily="@font/segoe_pro_semi_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="@dimen/_26sdp"
+        tools:text="Are you sure ?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/tvPatientName"
+        style="@style/BaseTextStyleBold"
+        android:textColor="@color/appBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAlertSubTitle"
+        tools:text="Nasrin Akter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPatientPhone"
+        android:layout_marginStart="@dimen/_16sdp"
+        style="@style/BaseTextStyleRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatientName"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:text="01929298674" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPackageName"
+        android:layout_marginStart="@dimen/_16sdp"
+        style="@style/BaseTextStyleBold"
+        android:textColor="@color/appBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatientPhone"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:text="Nasrin Akter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTransactionId"
+        style="@style/BaseTextStyleBold"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:textColor="@color/appBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPackageName"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:text="Nasrin Akter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        style="@style/BaseTextStyleBold"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:textColor="@color/appBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactionId"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:text="Nasrin Akter" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        android:id="@+id/tvAlertSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/subTittleColor"
+        android:textSize="14sp"
+        app:fontFamily="@font/segoe_pro_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlertTitle"
+        tools:text="Your requested payment link has been sent to user’s phone number." />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnYes"
+        style="@style/BaseTextStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/bg_rad_5"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="Yes"
+        android:textColor="@color/appWhite"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnNo"
+        style="@style/BaseTextStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rad_5"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="No"
+        android:textColor="@color/appWhite"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnYes" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnOnlinePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvAlertTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvAlertSubTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/go_back_btn"
+        android:background="?attr/selectableItemBackground"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

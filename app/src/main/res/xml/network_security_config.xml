@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true"> https://api.zaynaxhealth.com</domain>
+        <domain includeSubdomains="true">10.10.0.182</domain>
+        <domain includeSubdomains="true">10.10.0.5</domain>
+        <domain includeSubdomains="true">182.160.120.69</domain>
+        <domain includeSubdomains="true">api.zaynaxhealth.com</domain>
+
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/extracas"/>-->
+<!--            <certificates src="system"/>-->
+<!--        </trust-anchors>-->
+
+    </domain-config>
+</network-security-config>

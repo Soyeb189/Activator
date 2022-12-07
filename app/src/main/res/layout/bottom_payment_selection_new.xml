@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom"
+    android:paddingBottom="20dp">
+
+    <CheckBox
+        android:id="@+id/terms_and_condition_radio_button"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_with">
+
+        <ImageView
+            android:id="@+id/iv_pay_with_bkash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_pay_with_b_kash"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/iv_pay_nagad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_nagad"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_pay_with_visa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_pay_with_visa"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_pay_with_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_cash_pay"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@color/barColor"
+        app:layout_constraintTop_toBottomOf="@+id/rv_package_details" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@color/barColor"
+        app:layout_constraintTop_toBottomOf="@+id/tvCommissionTitle" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTopLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:src="@drawable/ic_bottom_dialog_top_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPaySelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_21sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTopLine"
+        app:srcCompat="@drawable/ic_video_blue" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_dark_with_shape"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:srcCompat="@drawable/dot" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaySelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="Zaynax Nirvor - Silver 12 Months"
+        android:textColor="@color/appBlack"
+        android:textSize="18sp"
+        app:fontFamily="@font/segoe_pro_semi_bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivPaySelection"
+        app:layout_constraintStart_toEndOf="@id/ivPaySelection"
+        app:layout_constraintTop_toTopOf="@id/ivPaySelection" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_payment_fee_type"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/package_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_package_price"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="BDT 599"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_payment_fee_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_payment_fee_type"
+        tools:text="BDT 599" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCommissionTitle"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/commission"
+        app:layout_constraintStart_toStartOf="@+id/tv_payment_fee_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payment_fee_type" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCommission"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="BDT 0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCommissionTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCommissionTitle"
+        tools:text="BDT 00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView64"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/total_payable"
+        android:textColor="@color/appBlack"
+        app:layout_constraintStart_toStartOf="@+id/tvCommissionTitle"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_grand_total"
+        style="@style/BaseTextStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="৳ 1449"
+        android:textColor="@color/appBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView64"
+        tools:text="৳ 1449" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_terms_condition_message"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_appointment_booking_you_are_agree"
+        android:textColor="@color/appBlack"
+        app:layout_constraintStart_toEndOf="@+id/terms_and_condition_radio_button"
+        app:layout_constraintTop_toTopOf="@+id/terms_and_condition_radio_button" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView70"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="@string/zaynax_healths"
+        android:textColor="@color/appBlack"
+        app:layout_constraintStart_toStartOf="@+id/tv_terms_condition_message"
+        app:layout_constraintTop_toBottomOf="@+id/tv_terms_condition_message" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_terms_and_condition"
+        style="@style/HomeItemSubTittleStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_dark_with_shape"
+        android:text="@string/terms_and_condition"
+        android:textColor="@color/app_red"
+        app:layout_constraintBottom_toBottomOf="@+id/textView70"
+        app:layout_constraintStart_toEndOf="@+id/textView70"
+        app:layout_constraintTop_toTopOf="@+id/textView70" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pay_with"
+        style="@style/HomeMenuItemTittleStyle"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/pay_with"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_package_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ivPaySelection"
+        app:layout_constraintTop_toBottomOf="@id/ivPaySelection" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

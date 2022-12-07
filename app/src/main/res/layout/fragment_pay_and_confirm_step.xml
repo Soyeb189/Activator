@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_30sdp"
+    android:background="@drawable/bg_bottom">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTopLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottom_dialog_top_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_14sdp"
+            />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPayOnlineNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTopLine"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        app:srcCompat="@drawable/pay_online_now"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pay_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="@string/pay_online_now"
+        app:layout_constraintStart_toEndOf="@id/ivPayOnlineNow"
+        app:layout_constraintTop_toTopOf="@id/ivPayOnlineNow"
+        app:layout_constraintBottom_toBottomOf="@id/ivPayOnlineNow"
+        android:textSize="18sp"
+        android:textColor="@color/appBlack"
+        app:fontFamily="@font/segoe_pro_semi_bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaySubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_with_100_secure_payment_options_and_confirm_your_appointment"
+        app:layout_constraintStart_toStartOf="@id/ivPayOnlineNow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPayOnlineNow"
+        android:textSize="14sp"
+        android:textColor="@color/subTittleColor"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:fontFamily="@font/segoe_pro_regular"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPayWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_with"
+        app:layout_constraintStart_toStartOf="@id/ivPayOnlineNow"
+        app:layout_constraintTop_toBottomOf="@id/tvPaySubTitle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="14sp"
+        android:textColor="@color/appBlack"
+        app:fontFamily="@font/segoe_pro_semi_bold"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPayWith">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_pay_with_bkash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+
+            app:srcCompat="@drawable/ic_pay_with_b_kash" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_pay_nagad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+
+            app:srcCompat="@drawable/ic_nagad"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_pay_with_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+
+            app:srcCompat="@drawable/ic_pay_with_visa"
+           />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_pay_with_master_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_dark_with_shape"
+
+            app:srcCompat="@drawable/ic_pay_with_master_card"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/help"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_54sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/ivHelp"
+        app:layout_constraintTop_toTopOf="@id/ivHelp"
+        app:layout_constraintBottom_toBottomOf="@id/ivHelp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/default_black"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/no_internet_or_empty_view"
+        layout="@layout/no_internet_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

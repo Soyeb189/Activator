@@ -1,0 +1,489 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ActivatorApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- No ActionBar theme. -->
+    <style name="NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorPrimaryVariant">@color/app_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_secondary</item>
+        <item name="colorSecondaryVariant">@color/app_secondary_variant</item>
+        <item name="colorOnSecondary">@color/app_color_on_secondary</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+
+
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+
+
+
+    </style>
+
+
+    <!--    ////////////////// font family ///////////////-->
+
+
+    <style name="BaseTextStyleBoldRoboto">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="BaseTextStyleRegularRoboto">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BaseTextStyleRegularEbrima">
+        <item name="fontFamily">@font/ebrima_regular</item>
+    </style>
+
+
+    <style name="BaseTextStyleRegularPopinsSemiBold">
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+    </style>
+
+
+    <!--    ///////////////////// Libs'Styles - START //////////////////////-->
+
+    <style name="OtpWidget" />
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="LibsOtpView" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+    <!--    ///////////////////// Libs'Styles - END //////////////////////-->
+
+
+    <!--    /////////////////////// keyboard for setting password - START ///////////////////  -->
+
+
+    <style name="PasswordKeyboardViewStyle">
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">@dimen/_25sdp</item>
+        <item name="android:textColor">@color/keyboard_password</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:width">@dimen/_55sdp</item>
+        <item name="android:height">@dimen/_55sdp</item>
+        <item name="android:foreground">@drawable/ripple_shape_rectangle</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+
+    <!--    /////////////////////// keyboard for setting password - END ///////////////////  -->
+
+
+    <!--    ///////////////////////  language change - START  ///////////////////  -->
+
+
+    <style name="LanguageChangeTextViewStyle">
+        <item name="android:padding">@dimen/_3sdp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/keyboard_password</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:foreground">@drawable/ripple_shape_rectangle</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+
+    <!--    ///////////////////////  language change - END  ///////////////////  -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////////-->
+
+
+    <style name="NavigationDrawerStyle">
+        <!--<item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/_40sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+        <item name="listPreferredItemHeightSmall">@dimen/_40sdp</item>
+        <item name="android:scrollbarThumbVertical">@color/transparent</item>-->
+    </style>
+
+
+    <style name="HomeMenuItemTittleStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_32sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_semi_bold</item>
+    </style>
+
+    <style name="HomeMenuItemSubTittleStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_32sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+    </style>
+
+
+    <style name="HomeMenuItemTittleStyle2">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_32sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_semi_bold</item>
+    </style>
+
+    <style name="HomeMenuItemSubTittleStyle2">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_32sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+    </style>
+
+
+    <style name="BaseTextStyleBold">
+        <item name="fontFamily">@font/segoe_pro_semi_bold</item>
+    </style>
+
+    <style name="BaseTextStyleRegular">
+        <item name="fontFamily">@font/segoe_pro_regular</item>
+    </style>
+
+
+    <style name="HomeMenuHolderStyle">
+        <item name="android:background">@drawable/ripple_dark_with_shape</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_15sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+    </style>
+
+    <style name="HomeMenuItemIconStyle">
+        <item name="android:layout_width">@dimen/_20sdp</item>
+        <item name="android:layout_height">@dimen/_20sdp</item>
+    </style>
+
+
+    <!--    /////////////////////////  Homepage holder, icon and text - START  /////////////////////////////////////////////////////-->
+
+
+    <style name="HomepageServiceHolderStyle">
+        <item name="android:background">@drawable/shape_rounded_all_corners</item>
+        <item name="android:foreground">@drawable/ripple_dark_with_shape</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/_80sdp</item>
+        <item name="android:layout_height">@dimen/_80sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+
+    <style name="HomepageServiceIconStyle">
+        <item name="android:layout_width">@dimen/_35sdp</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:tint">@color/app_primary_variant</item>
+    </style>
+
+
+    <style name="HomepageBottomServiceHolderStyle">
+        <item name="android:foreground">@drawable/ripple_dark_with_shape</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/_55sdp</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:paddingTop">@dimen/_3sdp</item>
+        <item name="android:layout_marginStart">@dimen/_3sdp</item>
+    </style>
+
+
+    <style name="HomepageBottomServiceIconStyle">
+        <item name="android:layout_width">@dimen/_20sdp</item>
+        <item name="android:layout_height">@dimen/_20sdp</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+
+    <!--    /////////////////////////  Homepage icon and text - END  /////////////////////////////////////////////////////-->
+
+
+    <!--    /////////////////////////  operator selection - START  /////////////////////////////////////////////////////-->
+
+
+    <style name="OperatorSelectionClStyle">
+        <item name="android:layout_width">@dimen/_40sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/shape_rounded_all_corners</item>
+        <item name="android:elevation">@dimen/_2sdp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+    </style>
+
+
+    <style name="OperatorSelectionImageStyle">
+        <item name="android:layout_width">@dimen/_30sdp</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+    </style>
+
+    <style name="Theme.ActivatorApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ZaynaxPayment.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ZaynaxPayment.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--    /////////////////////////  operator selection - END  /////////////////////////////////////////////////////-->
+
+<!-- test - START -->
+
+    <!-- Base application theme. -->
+
+    <!--
+    <style name="Theme.TestNavDrawer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        &lt;!&ndash; Primary brand color. &ndash;&gt;
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        &lt;!&ndash; Secondary brand color. &ndash;&gt;
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        &lt;!&ndash; Status bar color. &ndash;&gt;
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+    </style>
+
+    <style name="Theme.TestNavDrawer.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TestNavDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TestNavDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+-->
+<!-- test - END -->
+
+    <!-- Statement Tab Style start here -->
+
+    <style name="profileTab" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/profileTabAppearances</item>
+    </style>
+
+    <style name="profileTabAppearances" parent="TextAppearance.Design.Tab">
+        <item name="fontFamily">@font/segoe_pro_semi_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!---->
+    <style name="EducationSpecializationAddItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/subTittleColor</item>
+        <item name="android:background">@drawable/shape_rounded_with_border_red</item>
+        <item name="android:drawablePadding">@dimen/_16sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:paddingEnd">@dimen/_6sdp</item>
+        <item name="android:paddingTop">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">@dimen/_6sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+        <item name="android:layout_marginStart">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_1sdp</item>
+    </style>
+
+    <!-- Statement Tab Style end here -->
+
+
+
+<!--///////////////// nav drawer - START ///////////////-->
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/default_black</item>
+    </style>
+
+<!--///////////////// nav drawer - END ///////////////-->
+
+
+
+
+<!--    Activator App - START -->
+
+    <style name="logInTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@color/app_red</item>
+        <item name="tabTextAppearance">@style/logInTabTextAppearances</item>
+    </style>
+
+    <style name="logInTabTextAppearances" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/appBlack</item>
+        <item name="fontFamily">@font/segoe_pro_semi_bold</item>
+    </style>
+
+
+    <style name="HistoryTabTextAppearances" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="fontFamily">@font/segoe_pro_semi_bold</item>
+        <item name="android:fontFamily">@font/segoe_pro_semi_bold</item>
+    </style>
+
+
+
+
+    <style name="InputEditTextItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+        <item name="android:background">@drawable/shape_lef_right_arch_subtitlecolor_border</item>
+    </style>
+
+
+
+    <style name="InputEditTextItemStyleSignIn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+        <item name="android:background">@drawable/shape_lef_right_arch_subtitlecolor_border</item>
+    </style>
+
+
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_intput_storke</item>
+        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+    </style>
+
+    <style name="logInInputStyle" parent="BaseTextStyleRegular">
+        <item name="android:textColor">@color/appBlack</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="SpinnerCustomStyle" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+<!--        <item name="android:left">0dp</item>-->
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+    </style>
+
+    <style name="SpinnerPopUp">
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+<!--        <item name="android:paddingStart">@dimen/_8sdp</item>-->
+    </style>
+
+    <style name="HomeItemSubTittleStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/subTittleColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="font">@font/segoe_pro_regular</item>
+        <item name="fontFamily">@font/segoe_pro_regular</item>
+    </style>
+
+    <style name="HomeItemTittleStyle">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/appBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <style name="TransparentInputBottomSheetDialogNew" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheet</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorAccent">@color/app_primary</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>-->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="TransparentBottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:colorAccent">@color/app_primary</item>
+        <!--        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>-->
+    </style>
+
+    <style name="BaseTextViewRegularStyle">
+        <item name="fontFamily">@font/segoe_pro_regular</item>
+    </style>
+
+    <style name="RoundedCornersDialog" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="dialogCornerRadius">@dimen/_10sdp</item>
+    </style>
+
+    <!--Material Calender Color-->
+
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- just override the colors used in the default style -->
+        <item name="colorOnPrimary">#eeeeee</item>
+        <item name="colorPrimary">#212121</item>
+    </style>
+
+    <!--Material Calender Color-->
+
+    <style name="ProfileEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/segoe_pro_regular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:background">@drawable/shape_bottom_border_profile</item>
+        <item name="android:backgroundTint">#E0E0E0</item>
+        <item name="colorControlNormal">#E0E0E0</item>
+        <item name="colorControlActivated">#E0E0E0</item>
+        <item name="colorControlHighlight">#E0E0E0</item>
+    </style>
+</resources>
